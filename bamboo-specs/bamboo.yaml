@@ -1,15 +1,15 @@
 ---
 version: 2
 plan:
-  project-key: PT2
-  key: PLAIN22
-  name: Plain22
+  project-key: BUG
+  key: PL
+  name: PL
 stages:
-- Default Stage:
-    manual: false
-    final: false
-    jobs:
-    - Default Job
+  - Default Stage:
+      manual: false
+      final: false
+      jobs:
+        - Default Job
 Default Job:
   key: JOB1
   other:
@@ -35,15 +35,15 @@ other:
 ---
 version: 2
 plan:
-  key: PT2-PLAIN22
+  key: BUG-PL
 plan-permissions:
-- users:
-  - admin
-  permissions:
-  - view
-  - edit
-  - build
-  - clone
-  - admin
-  - view-configuration
+  - users:
+      - admin
+    permissions:
+      - view
+      - edit
+      - build
+      - clone
+      - admin
+      - view-configuration
 ...
