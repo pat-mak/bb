@@ -16,7 +16,7 @@ Default Job:
   - script:
       interpreter: SHELL
       scripts:
-      - for i in {0..10}; do sleep 1; echo $i; done;
+      - for i in {0..10}; do sleep 1; echo $i; done; echo "done";
   other:
     all-other-apps:
       custom.test.ephemeral.agent.enabled: 'false'
